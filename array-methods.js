@@ -10,18 +10,30 @@ const runs = [
 ];
 
 
-let john = { name: "John", surname: "Smith", id: 1 };
-let pete = { name: "Pete", surname: "Hunt", id: 2 };
-let mary = { name: "Mary", surname: "Key", id: 3 };
 
-let users = [ john, pete, mary ];
+function shuffle(array) {
+    array.sort(() => Math.random() - 0.5);
+}
 
-let usersMapped = users.map(user => ({
-    fullName: `${user.name} ${user.surname}`,
-    id: user.id
-}));
+let arr = [1, 2, 3];
+shuffle(arr);
+console.log(arr)
 
-let names = users.map( item => item.name);
+{
+  const prices = [12, 5, 30, 8, 22];
 
-console.log(usersMapped[0].id);
-console.log(usersMapped[0].fullName);
+  const increased = prices.map(n => Number((n * 1.1).toFixed(2)));
+  console.log(increased);
+
+  const cheap = prices.filter(n => n < 20);
+  console.log(cheap);
+
+  const over = prices.find(n => n > 25);
+  console.log(over);
+
+  const total = prices.reduce((priceTotal, price) => priceTotal + price, 0);
+  console.log(total);
+
+  const order = [...prices].sort((a, b) => a - b);
+  console.log(order);
+}
