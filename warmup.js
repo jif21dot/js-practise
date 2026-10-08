@@ -23,3 +23,89 @@
     console.log(meals[0]);
     console.log(lighterMeal);
 }
+
+{
+    const students = [
+    { name: "Alex", grade: 85 },
+    { name: "Sam", grade: 92 },
+    { name: "Jordan", grade: 78 },
+    { name: "Taylor", grade: 95 }
+    ];
+
+    const names = students.map(student => student.name);
+    console.log(names);
+
+    const topStudent = students.reduce((highest, student) => 
+        student.grade > highest.grade ? student : highest
+    );
+    console.log(topStudent);
+
+    const averageGrade = students.reduce((total, student) => total + student.grade, 0) / students.length;
+    console.log(averageGrade);
+
+    const highStudents = students.filter(student => student.grade >= 90);
+    console.log(highStudents);
+}
+
+{
+    const user = {
+    name: "James",
+    age: 24,
+    city: "London",
+    hobbies: ["gaming", "football"]
+    };
+
+    const { name, age, ...details } = user
+    console.log(name);
+    console.log(age);
+
+    const userCopy = { ...user };
+    userCopy.city = "Manchester";
+    userCopy.hobbies = [ ...userCopy.hobbies, "Coding" ]
+    console.log(userCopy);
+
+    const { name: userName, ...rest } = user;
+    console.log(userName);
+    console.log(details);
+
+}
+
+{
+    const numbers = [1, 2, 3, 2, 4, 5, 1, 6, 3];
+
+    const uniqueNumbers = [];
+    for (const number of numbers) {
+        if (!uniqueNumbers.includes(number)) {
+            uniqueNumbers.push(number);
+        }
+    }
+
+    console.log(uniqueNumbers);
+
+    const newNumbers = [ ...new Set(numbers) ];
+    console.log(newNumbers);
+}
+
+{
+    const cart = [
+    { name: "Laptop", price: 800, quantity: 1 },
+    { name: "Mouse", price: 25, quantity: 2 },
+    { name: "Keyboard", price: 60, quantity: 1 }
+    ];
+
+    const totalPrice = cart.reduce((total, item) => {
+        return total + item.price * item.quantity;
+    }, 0);
+
+    console.log(totalPrice);
+
+    const itemNames = cart.map( item => item.name);
+    console.log(itemNames);
+
+    const topItem = cart.reduce((highest, item) => {
+        return item.price > highest.price ? item : highest;
+    });
+
+    console.log(topItem);
+    
+}
