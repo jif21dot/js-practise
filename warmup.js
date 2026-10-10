@@ -107,5 +107,4 @@
     });
 
     console.log(topItem);
-    
 }
