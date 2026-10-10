@@ -1,5 +1,7 @@
 # Data Explorer
 
+**Live demo:** https://jif21dot.github.io/js-practise/data-explorer/
+
 ## What it does
 A web page which will show all runs completed. Filters by type, sorts by distance or date complete, shows heart rate on each individual run, and shows total km run
 
