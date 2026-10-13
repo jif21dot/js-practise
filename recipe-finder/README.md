@@ -9,6 +9,7 @@ A page used to search for recipes using a certain ingredient. The page will disp
 - [x] Loading Message
 - [x] Error message
 - [x] "no recipes found" message
+- [x] Recipe details
 
 ## Data
 What comes from TheMealDB
@@ -63,3 +64,14 @@ Search Using Enter
 Recipe finder has been built and tested successfully. Users can search for recipes including any ingredient they want. Appropriate message cards appear depending on if search box is empty, no ingredient can be found, loading etc.
 
 Good project to test knowledge learned, also challenged myself a bit more by adding new things and try to figure stuff out on my own more. Everything feels like its clicking more, but would still be struggling to start a similar project like this on my own from scratch.
+
+## Recipe Details
+
+Clicking a recipe card fetches and displays the full recipe using TheMaleDB's lookup API
+
+The detail view includes:
+
+- Recipe name and image
+- Ingredients with measurements
+- Cooking instructions
+- Loading and error messages
