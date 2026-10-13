@@ -15,7 +15,7 @@ Each run will have id, date, type, km and heartRate.
 - [x] show total km, updating with the filter
 - [x] Styled with CSS
 
-# What I learned
+## What I learned
 - How to add buttons
 - Filter and Sort data with the data explorer
 - Style a document
