@@ -1,0 +1,19 @@
+.card {
+    width: 300px;
+    padding: 30px;
+    border: 2px solid darkgreen;
+    margin: 20px;
+    margin-bottom: 40px;
+    background-color: lightgreen;
+    box-sizing: border-box;
+}
+
+.service-card {
+    width: 320px;
+    padding: 30px;
+    border: 2px solid darkgreen;
+    border-radius: 6px;
+    margin: 20px;
+    background-color: palegreen;
+    box-sizing: border-box;    
+}
