@@ -1,0 +1,11 @@
+.services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.service {
+    padding: 20px;
+    border: 2px solid darkgreen;
+    background-color: lightgreen;
+}
