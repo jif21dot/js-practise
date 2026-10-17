@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    height: 300px;
+}
+
+.box {
+    background-color: lightgreen;
+    border: 2px solid green;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: darkgreen;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.services a {
+    padding: 20px;
+    background-color: palegreen;
+    border: 2px solid darkgreen;
+    width: 200px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.cleaning {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.job {
+    width: 220px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: lightblue;
+    border: 2px solid navy;
+}
