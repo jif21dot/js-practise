@@ -1,11 +1,23 @@
 .services {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
 }
 
 .service {
     padding: 20px;
     border: 2px solid darkgreen;
     background-color: lightgreen;
+}
+
+.photoservices {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.phservice {
+    padding: 20px;
+    background-color: lightgrey;
+    border: 2px solid black;
 }

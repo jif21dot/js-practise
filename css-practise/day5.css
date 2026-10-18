@@ -1,0 +1,45 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: darkgreen;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.service {
+    padding: 15px;
+    background-color: lightgreen;
+    border: 2px solid darkgreen;
+}
+
+.conbar {
+    background-color: lightgreen;
+    padding: 20px;
+    color: darkgreen;
+}
+
+.con-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.con-link a {
+    color: darkgreen;
+}
