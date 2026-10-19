@@ -1,0 +1,44 @@
+.req {
+    display: block;
+    padding: 25px;
+    background-color: lightgreen;
+    max-width: 600px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: darkgreen;
+    color: white;
+    cursor: pointer;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+button:focus-visible {
+    outline: 3px solid orange;
+    outline-offset: 3px;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid darkgreen;
+    outline-offset: 2px;
+}

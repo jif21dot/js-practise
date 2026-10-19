@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Green Gardens - Request a Quote</title>
+        <link rel="stylesheet" href="day7.css">
+    </head>
+    <body>
+        <main class="req">
+            <h1>Request a Free Quote</h1>
+            <p>Tell us about your garden and we'll get in touch.</p>
+            <form>
+                <label for="customer-name">Your name (required)</label>
+                <input
+                type="text"
+                id="customer-name"
+                name="customerName"
+                autocomplete="name"
+                required
+                >
+                <label for="customer-email">Your email (required)</label>
+                <input
+                type="email"
+                id="customer-email"
+                name="customerEmail"
+                autocomplete="email"
+                required
+                >
+                <label for="customer-phone">Your phone number (optional)</label>
+                <input
+                type="tel"
+                id="customer-phone"
+                name="customerTel"
+                autocomplete="tel"
+                >
+
+                <label for="service-required">Select your service (required)</label>
+
+                <select id="service-required" name="service-required" required>
+                    <option value="">Select a service</option>
+                    <option value="mowing">Lawn Mowing</option>
+                    <option value="trimming">Hedge Trimming</option>
+                    <option value="clearance">Garden Clearance</option>
+                    <option value="cleaning">Patio Cleaning</option>
+                </select>
+
+                <label for="message">Tell us about your garden (required)</label>
+
+                <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                ></textarea>
+
+                <button type="submit">Send Enquiry</button>
+            </form>
+        </main>
+    </body>
+</html>
