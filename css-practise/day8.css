@@ -1,0 +1,74 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: lightgrey;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: grey;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.reason-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.reason {
+    padding: 10px;
+    background-color: lightgrey;
+    border-radius: 5px;
+}
+
+.service-card {
+    padding: 15px;
+    background-color: lightgrey;
+    border-radius: 1px;
+}
+
+.hero {
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(234, 246, 204);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hero a{
+    display: inline-block;
+    background-color: rgb(147, 153, 101);
+    border-radius: 5px;
+    border: none;
+    padding: 12px 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 600px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
