@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact | Green Gardens</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <p class="brand">Green Gardens</p>
+            <nav class="navbar" aria-label="Main navigation">
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </nav>
+        </header>
+        <main class="page-content">
+            <section class="contact-introduction">
+                <h1>Get a Free Quote</h1>
+                <p>Tell us a little about your garden and how we can help.</p>
+            </section>
+            <form 
+                class="contact-form"
+                action="https://formspree.io/f/xpppdnpn"
+                method="POST">
+                <label for="customerName">Full Name</label>
+                <input type="text" id="customerName" name="customerName" required>
+                
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="serviceRequired">Service Required</label>
+                <select id="serviceRequired" name="serviceRequired" required>
+                    <option value="">Choose a service</option>
+                    <option value="mowing">Grass Cutting</option>
+                    <option value="trimming">Hedge Trimming</option>
+                    <option value="powerW">Power Washing</option>
+                    <option value="gutter">Gutter Cleaning</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="message">Tell us about your garden</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="submit-button">Send Enquiry</button>
+            </form>
+        </main>
+        <footer>
+            <h3>Green Gardens</h3>
+            <p>Scottish Highlands</p>
+            <nav aria-label="Footer navigation">
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </nav>
+            <p>&copy; 2026 Green Gardens Garden Maintenance</p>
+        </footer>
+    </body>
+</html>

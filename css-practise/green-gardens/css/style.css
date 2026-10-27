@@ -230,7 +230,70 @@ footer nav a {
     outline-offset: 4px
 }
 
+.services-page-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
 
+.about-introduction,
+.service-introduction,
+.contact-introduction {
+    background-color: #596b3d;
+    color: #f5efe3;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.contact-form input,
+.contact-form select, 
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font: inherit;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #302f29;
+}
+
+.contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.submit-button {
+    display: inline-block;
+    padding: 12px 24px;
+    cursor: pointer;
+    border: none;
+    font: inherit;
+    border-radius: 6px;
+    margin-top: 20px;
+    background-color: #596b3d;
+    color: #f5efe3;
+    text-align: center;
+}
+
+.submit-button:hover {
+    background-color: #3c4729;
+}
+
+.submit-button:focus-visible {
+    outline: 3px solid #222817;
+    outline-offset: 4px;
+}
 
 @media (max-width: 768px) {
     .hero-content h1 {
@@ -256,3 +319,4 @@ footer nav a {
         justify-content: center;
     }
 }
+
